@@ -1,0 +1,181 @@
+html {
+  background-color: darkgray;
+  
+}
+
+body {
+ 
+  background-color: #cccccc;
+ }
+
+body, main {
+    margin: 40px;
+    background-color: darkgray;
+    margin-right: 9%;
+    padding-right: 10%;
+  }
+  h1 {
+    color: turquoise;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+    position: relative;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .wrapper {
+      display: grid;
+      grid-gap: 5%;
+      grid-template-columns: 70% 30% 30%;
+      grid-template-areas:
+      "header  header  header"
+      "sidebar content content"
+      "footer  footer  footer";
+      background-color: darkgray;
+      color: #444;
+    
+    }
+  
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 25px;
+    padding: 2%;
+    font-size: 150%;
+  }
+  
+
+
+#mainPic {
+    width: 300px;
+    height: 350px;
+    float: right;
+    margin-top: 0;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+a {
+    font-size: xx-large;
+    color: white;
+    display: block;
+    text-decoration: italic;
+    padding-top: 30px;
+}
+
+#sidebar {
+  display: columns;
+}
+
+.sidebar a {
+  color: aliceblue;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 120%;
+  padding-top: 50px;
+  padding-left: 5px;
+}
+
+.sectionImages {
+  width: 30%;
+  height: 30%;
+  float: right;
+  max-width: 200px;
+  max-height: 200px;
+}
+.parts {
+  /* border: 1px solid turquoise; */
+  padding: 10px;
+  box-shadow: 5px 10px turquoise;
+}
+
+.contentImages {
+  width: 230px;
+  height: 200px;
+  float: right;
+  padding: 10px;
+}
+
+.titles {
+  color: turquoise;
+}
+input {
+  width: 30%;
+  text-align: center;
+  margin-top: 25px;
+}
+#submit {
+  background-color: turquoise;
+}
+label {
+  color: lightgray;
+}
+td {
+  padding-top: 20px;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+.footerText {
+  text-align: center;
+}
+
+button {
+  background-color: turquoise !important;
+  border-radius: 5%;
+  width: 90%;
+  height: 10%;
+  padding: 20px;
+  margin: 20px;
+  font-size: xx-large;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 70% 30% 30%;
+    grid-template-areas:
+    "header header header"
+    "sidebar sidebar  sidebar"
+    "content content content"
+    "footer  footer  footer";
+    background-color: darkgray;
+    color: #444;
+  
+  }
+}
+
+#sidebar {
+  background-color: darkgray;
+  border: none;
+  box-shadow: none;
+  
+}
+
+li {
+  margin: 15px;
+}
+
+
+
+
+
